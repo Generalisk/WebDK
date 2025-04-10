@@ -1,0 +1,15 @@
+{
+    "title": "WebDK Example Website",
+    "webtitle": "Example",
+    "version": "1",
+    "author": "WebDK",
+    "copyrightYear": 2025,
+    "iconfile": "icon",
+    "defaultLanguage": "en",
+
+    "features": [
+        "topnav",
+        "footer",
+        "localization"
+    ]
+}

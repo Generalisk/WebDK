@@ -1,0 +1,63 @@
+# Disable Caching
+<IfModule mod_headers.c>
+    Header set Cache-Control "no-cache, no-store, must-revalidate"
+    Header set Pragma "no-cache"
+    Header set Expires 0
+</IfModule>
+
+
+
+# Change Directory Index
+# This is for web hosting services that use different directory index names e.g. Hostinger uses default.php
+# This is to make sure that the web hosting service uses index.php as the index page
+DirectoryIndex index.php
+
+
+
+# URL Rewriting
+RewriteEngine on
+
+# Use https:// instead of http:// as it is more secure
+RewriteCond %{HTTPS} off
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=302,L]
+
+# Remove WWW from the URL
+RewriteCond %{HTTP_HOST} ^www\.(.*)
+RewriteRule ^(.*)$ https://%1/$1 [R=302,L]
+
+# Add PHP file extension if request is web page
+RewriteCond %{REQUEST_URI} !^/content
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.php -f
+RewriteRule ^(.*?)/?$ $1.php [L]
+    
+# Redirect request to pages directory
+#RewriteCond %{REQUEST_URI} !^/content
+#RewriteCond %{REQUEST_FILENAME} !^([0-9]+)
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteRule ^(.*)$ /pages/$1 [L]
+# This rule is commented out because it causes the ErrorDocuments to break
+# TODO: Fix this!
+
+
+
+# This is just A cheap workaround to solve some file searching issues in subdirectories
+# I only did the 1st 10 subdirectories since I hightly doubt it would be any longer than that,
+# And also it's just common practice to avoid making your file url's too long
+# But if, for whatever reason, you need it to be more than 10 directories long, feel free to simply extend the string
+php_value include_path ./:../:../../:../../../:../../../../:../../../../../:../../../../../../:../../../../../../../:../../../../../../../../:../../../../../../../../../:../../../../../../../../../../
+
+# Inserting Global Web Page Data
+# e.g. Top Navigation Bar, Footer, Global Stylesheet Data etc.
+# Note: Feature only works on PHP files
+php_value auto_prepend_file "global/prepend.php"
+php_value auto_append_file "global/append.php"
+
+
+
+# Error Pages
+ErrorDocument 400 /400.php
+ErrorDocument 401 /401.php
+ErrorDocument 403 /403.php
+ErrorDocument 404 /404.php
+ErrorDocument 500 /500.php

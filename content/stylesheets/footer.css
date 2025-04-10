@@ -1,0 +1,28 @@
+footer {
+    background-color: black;
+    color: white;
+    font-family: "Secondary";
+    /*border: solid black 3px;*/
+    padding: 0 20px 0 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+footer h5 {
+    margin: 25px, 0, 25px, 0;
+}
+
+footer .items {
+    padding: 16px 16px 16px 100px;
+}
+
+footer .itemcollumn {
+    float: left;
+    margin-right: 42px;
+}
+
+footer .icon {
+    float: left;
+    padding: 64px 0 0 0;
+}

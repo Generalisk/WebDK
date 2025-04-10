@@ -1,0 +1,138 @@
+/*Website Fonts*/
+@font-face {
+    font-family: "Primary";
+    src: url("../fonts/fixedsys.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: "Secondary";
+    src: url("../fonts/ocra_extended.ttf") format("truetype");
+}
+
+/*Head, Body & Base Content*/
+head {
+    background-color: black;
+    color: white;
+    font-family: "Secondary";
+}
+
+body {
+    background-color: white;
+    background-size: cover;
+    background-attachment: fixed;
+    color: black;
+    font-family: "Primary";
+}
+
+h1 {
+    font-size: 72px;
+    transition: font-size 0.3s;
+}
+
+h2 {
+    font-size: 48px;
+    transition: font-size 0.3s;
+}
+
+h3 {
+    font-size: 36px;
+    transition: font-size 0.3s;
+}
+
+h4 {
+    font-size: 28px;
+    transition: font-size 0.3s;
+}
+
+h5 {
+    font-size: 24px;
+    transition: font-size 0.3s;
+}
+
+h6 {
+    font-size: 20px;
+    transition: font-size 0.3s;
+}
+
+p {
+    font-size: 16px;
+    transition: font-size 0.3s;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+/*Shrink Text Sizes for Smaller Screens*/
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 48px;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    h3 {
+        font-size: 28px;
+    }
+    h4 {
+        font-size: 24px;
+    }
+    h5 {
+        font-size: 20px;
+    }
+    h6 {
+        font-size: 16px;
+    }
+    p {
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    h1 {
+        font-size: 36px;
+    }
+    h2 {
+        font-size: 28px;
+    }
+    h3 {
+        font-size: 24px;
+    }
+    h4 {
+        font-size: 20px;
+    }
+    h5 {
+        font-size: 16px;
+    }
+    h6 {
+        font-size: 12px;
+    }
+    p {
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width: 250px) {
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 24px;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    h4 {
+        font-size: 16px;
+    }
+    h5 {
+        font-size: 12px;
+    }
+    h6 {
+        font-size: 11px;
+    }
+    p {
+        font-size: 10px;
+    }
+}

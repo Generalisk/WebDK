@@ -1,0 +1,40 @@
+{
+    "PageTitle_Template": "Template Page",
+    "PageTitle_Home": "Home",
+    "PageTitle_Dropdown": "Dropdown",
+    "PageTitle_DropdownItem1": "Dropdown Item 1",
+    "PageTitle_DropdownItem2": "Dropdown Item 2",
+    "PageTitle_DropdownItem3": "Dropdown Item 3",
+    "PageTitle_Page1": "Page 1",
+    "PageTitle_Page2": "Page 2",
+    "PageTitle_Page3": "Page 3",
+
+    "SourceCode": "Source Code",
+
+    "ERR400": "400 (Bad Request)",
+    "ERR401": "401 (Unauthorized)",
+    "ERR403": "403 (Forbidden)",
+    "ERR404": "404 (Not Found)",
+    "ERR500": "500 (Internal Server Error)",
+    "ERRCODE": "ERROR CODE:",
+    "ErrorPage_Header": "We hit A roadblock!",
+    "ErrorPage_Description_400": "The server cannot understand the submitted request. This error usually occurs due to A syntax error in the submitted request.",
+    "ErrorPage_Description_401": "The authentication credentials provided are invalid.",
+    "ErrorPage_Description_403": "You do not have permission to access this page or file.",
+    "ErrorPage_Description_404": "The page your searching for could not be found!",
+    "ErrorPage_Description_500": "The server is currently experiencing some issues.",
+
+    "TemplateInfo": "This page is A template to use when creating custom pages. Please note that all main page content must be kept within or below the content div block if the top nav feature is enabled.",
+
+    "Website_Description": "Welcome to the Website Development Kit (WebDK). This is an example website created as A template to help you get started.",
+    "IndexPHP_Description": "If A folder contains an \"index.php\" file, the website will load that page by default if you put in the folders url.",
+
+    "Home_Description": "This is the home page.",
+    "DropdownPage_Description": "This is the dropdown page.",
+    "DropdownPage1_Description": "This is the first dropdown page.",
+    "DropdownPage2_Description": "This is the second dropdown page.",
+    "DropdownPage3_Description": "This is the third dropdown page.",
+    "Page1_Description": "This is the first page.",
+    "Page2_Description": "This is the second page.",
+    "Page3_Description": "This is the third page."
+}
