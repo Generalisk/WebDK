@@ -24,7 +24,7 @@
 
 <div align="center">
   
-  # Website Development Kit
+  <img src="IMAGES/WebDK_TitleCard.png" style="width:80%;" />
 </div>
 
 The Website Development Kit (WebDK) is an open source website template for building websites on php-supported servers, saving you from some of the heavy lifting.
