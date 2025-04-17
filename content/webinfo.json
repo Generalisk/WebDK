@@ -10,6 +10,7 @@
     "features": [
         "topnav",
         "footer",
+        "cookies",
         "localization"
     ]
 }

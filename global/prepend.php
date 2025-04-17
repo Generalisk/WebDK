@@ -18,4 +18,9 @@ require "$root/global/prepend/base.php";
 if (in_array("topnav", $features)) {
     require "$root/global/prepend/topnav.php";
 }
+
+// If cookies feature enabled, add to web page
+if (in_array("cookies", $features)) {
+    require "$root/global/prepend/cookies.php";
+}
 ?>
