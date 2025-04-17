@@ -15,14 +15,14 @@
         <div class="dropdown">
             <a class="dropbtn" href="examplesubdirectory">$(PageTitle_Dropdown)</a>
             <div class="dropdown-content">
-                <a href="dropdown/examplepage01">$(PageTitle_DropdownItem1)</a>
-                <a href="dropdown/examplepage02">$(PageTitle_DropdownItem2)</a>
-                <a href="dropdown/examplepage03">$(PageTitle_DropdownItem3)</a>
+                <a href="dropdown/examplepage1">$(PageTitle_DropdownItem1)</a>
+                <a href="dropdown/examplepage2">$(PageTitle_DropdownItem2)</a>
+                <a href="dropdown/examplepage3">$(PageTitle_DropdownItem3)</a>
             </div>
         </div>
-        <a href="examplepage01">$(PageTitle_Page1)</a>
-        <a href="examplepage02">$(PageTitle_Page2)</a>
-        <a href="examplepage03">$(PageTitle_Page3)</a>
+        <a href="examplepage1">$(PageTitle_Page1)</a>
+        <a href="examplepage2">$(PageTitle_Page2)</a>
+        <a href="examplepage3">$(PageTitle_Page3)</a>
         <a class="icon" style="padding:0" href="javascript:void(0);" onclick="OpenResponsiveTopNav();">
             <div class="menuicon">
                 <div class="bar1"></div>
