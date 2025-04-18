@@ -5,12 +5,20 @@
     "author": "WebDK",
     "copyrightYear": 2025,
     "iconfile": "icon",
-    "defaultLanguage": "en",
 
     "features": [
         "topnav",
         "footer",
         "cookies",
-        "localization"
-    ]
+        "localization",
+        "themes"
+    ],
+
+    "themes": [
+        "light",
+        "dark"
+    ],
+    
+    "defaultLanguage": "en",
+    "defaultTheme": "light"
 }

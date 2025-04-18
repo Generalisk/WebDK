@@ -1,0 +1,49 @@
+/*Base Content*/
+.theme-dark head {
+    background-color: #212121;
+    color: black;
+}
+
+.theme-dark body {
+    background-color: black;
+    color: white;
+}
+
+.theme-dark a {
+    color: white;
+}
+
+/*Top Nav Feature*/
+.theme-dark #topnav {
+    background-color: #212121;
+}
+
+.theme-dark #topnav a {
+    color: white;
+}
+
+.theme-dark #topnav a:hover {
+    background-color: #424242;
+}
+
+.theme-dark #topnav a.active {
+    background-color: #646464;
+}
+
+.theme-dark #topnav .dropdown-content {
+    background-color: #212121;
+}
+
+.theme-dark .bar1, .bar2, .bar3 {
+    background-color: white;
+}
+
+/*Footer Feature*/
+.theme-dark footer {
+    background-color: #212121;
+    color: white;
+}
+
+.theme-dark footer a {
+    color: white;
+}

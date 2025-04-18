@@ -1,0 +1,50 @@
+/*Base Content*/
+.theme-light head {
+    background-color: black;
+    color: white;
+}
+
+.theme-light body {
+    background-color: white;
+    color: black;
+}
+
+.theme-light a {
+    color: black;
+}
+
+/*Top Nav Feature*/
+.theme-light #topnav {
+    background-color: black;
+}
+
+.theme-light #topnav a {
+    color: white;
+}
+
+.theme-light #topnav a:hover {
+    background-color: #646464;
+}
+
+.theme-light #topnav a.active {
+    background-color: #A4A4A4;
+    color: black;
+}
+
+.theme-light #topnav .dropdown-content {
+    background-color: black;
+}
+
+.theme-light .bar1, .bar2, .bar3 {
+    background-color: white;
+}
+
+/*Footer Feature*/
+.theme-light footer {
+    background-color: black;
+    color: white;
+}
+
+.theme-light footer a {
+    color: white;
+}

@@ -45,7 +45,7 @@
 
 #topnav .dropdown-content {
     display: none;
-    background-color: #646464;
+    background-color: black;
     position: fixed;
     min-width: 160px;
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);

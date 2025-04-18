@@ -13,26 +13,26 @@ window.addEventListener("load", function() {
     } else {
         console.log("Website Development Kit (WebDK)\n" + webdkcopyright + "\nVersion " + webdkver);
     }
+    
+    // Display your Copyright Notice
+    const copyright = "Copyright @" + webinfo.copyrightYear + "-" + new Date().getFullYear() + " " + webinfo.author;
+    console.log(webinfo.title + "\n" + copyright + "\nVersion " + webinfo.version);
 
-    // Get & Read WebInfo.json
-    var request = new XMLHttpRequest();
-    request.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-            webinfo = JSON.parse(this.responseText);
-    
-            // Display your Copyright Notice
-            const copyright = "Copyright @" + webinfo.copyrightYear + "-" + new Date().getFullYear() + " " + webinfo.author;
-            console.log(webinfo.title + "\n" + copyright + "\nVersion " + webinfo.version);
-    
-            // Apend Web Title to the Page Title
-            document.title += " - " + webinfo.webtitle;
-    
-            // Set the page icon
-            if (webinfo.iconfile) {
-                document.getElementById("icon").href = url + "content/" + webinfo.iconfile + ".ico";
-            }
-        }
-    };
-    request.open("GET", url + "content/webinfo.json", true);
-    request.send();
+    // Apend Web Title to the Page Title
+    document.title += " - " + webinfo.webtitle;
+
+    // Set the page icon
+    if (webinfo.iconfile) {
+        document.getElementById("icon").href = url + "content/" + webinfo.iconfile + ".ico";
+    }
 }, false);
+
+// Get & Read WebInfo.json
+var request = new XMLHttpRequest();
+request.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+        webinfo = JSON.parse(this.responseText);
+    }
+};
+request.open("GET", url + "content/webinfo.json", true);
+request.send();
