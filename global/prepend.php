@@ -24,6 +24,11 @@ if (in_array("cookies", $features)) {
     require "$root/global/prepend/cookies.php";
 }
 
+// If localization feature enabled, add to web page
+if (in_array("localization", $features)) {
+    require "$root/global/prepend/localization.php";
+}
+
 // If theme feature enabled, add to web page
 if (in_array("themes", $features)) {
     require "$root/global/prepend/themes.php";

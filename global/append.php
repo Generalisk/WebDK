@@ -16,9 +16,4 @@ $features = $webinfo->features;
 if (in_array("footer", $features)) {
     require "$root/global/append/footer.php";
 }
-
-// If localization feature enabled, add to web page
-if (in_array("localization", $features)) {
-    require "$root/global/append/localization.php";
-}
 ?>
